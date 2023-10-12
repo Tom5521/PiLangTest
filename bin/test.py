@@ -16,6 +16,7 @@ def exec(bin):
     print()
 def run(cmd):
     sys(f"{cmd} {acuraccy}")
+    print()
 
 print(f"Acuraccy:{acuraccy}\n")
 print("Compiled:\n")
