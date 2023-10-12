@@ -5,7 +5,7 @@ use std::f64::consts::PI;
 fn calculate_pi(n: i32) -> f64 {
     let start = Instant::now();
 
-    let mut numerator = 4.0;
+    let numerator = 4.0;
     let mut denominator = 1.0;
     let mut operation = 1.0;
     let mut pi = 0.0;
