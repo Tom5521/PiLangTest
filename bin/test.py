@@ -14,6 +14,7 @@ def exec(bin):
     
     sys(f"builds/{bin}{win} {acuraccy}")
     print()
+
 def run(cmd):
     sys(f"{cmd} {acuraccy}")
     print()
