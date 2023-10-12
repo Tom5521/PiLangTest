@@ -21,5 +21,11 @@ echo $CalculateIn C++
 echo
 echo $CalculateIn Rust
 ./pi-rust $accuracy
+echo 
+echo $CalculateIn Lua
+lua main.lua $accuracy
+echo 
+echo $CalculateIn Ruby
+ruby main.rb $accuracy
 
 
