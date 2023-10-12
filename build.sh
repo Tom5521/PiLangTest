@@ -1,10 +1,14 @@
 #!/bin/bash
 
+if [[ ! -d "./builds" ]]; then
+  mkdir builds
+fi
+
 echo build Go 
-go build -o pi-go main.go
+go build -o builds/pi-go ./compiled/pi.go 
 echo build C++
-g++ -o pi-cpp main.cpp
+g++ -o builds/pi-cpp ./compiled/pi.cpp
 echo build C
-gcc -o pi-c main.c 
+gcc -o builds/pi-c ./compiled/pi.c
 echo build Rust
-rustc -o pi-rust main.rs
+rustc -o builds/pi-rust ./compiled/pi.rs

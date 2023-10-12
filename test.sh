@@ -8,24 +8,24 @@ echo Accuracy = $accuracy
 
 
 echo $CalculateIn golang
-./pi-go $accuracy
+./builds/pi-go $accuracy
 echo 
 echo $CalculateIn python
-python main.py $accuracy
+python ./interpreted/pi.py $accuracy
 echo 
 echo $CalculateIn C 
-./pi-c $accuracy
+./builds/pi-c $accuracy
 echo
 echo $CalculateIn C++
-./pi-cpp $accuracy
+./builds/pi-cpp $accuracy
 echo
 echo $CalculateIn Rust
-./pi-rust $accuracy
+./builds/pi-rust $accuracy
 echo 
 echo $CalculateIn Lua
-lua main.lua $accuracy
+lua ./interpreted/pi.lua $accuracy
 echo 
 echo $CalculateIn Ruby
-ruby main.rb $accuracy
+ruby ./interpreted/pi.rb $accuracy
 
 
