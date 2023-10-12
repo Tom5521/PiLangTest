@@ -22,7 +22,7 @@ func calculatePi(n int) float64 {
 	}
 
 	elapsed := time.Since(start)
-	fmt.Printf("Tiempo transcurrido: %vms\n", elapsed.Milliseconds())
+	fmt.Printf("Elapsed time: %vms\n", elapsed.Milliseconds())
 
 	return pi
 }
@@ -37,8 +37,8 @@ func main() {
 		return
 	}
 
-	fmt.Println("valor de pi default:", math.Pi)
+	fmt.Println("Default pi value:", math.Pi)
 
 	pi := calculatePi(n)
-	fmt.Println("valor de pi calculado localmente:", pi)
+	fmt.Println("pi value calculated locally", pi)
 }

@@ -16,7 +16,7 @@ def calculate_pi(n):
     operation *= -1
 
   elapsed = (time.time() - start) * 1000
-  print(f"Tiempo transcurrido: {elapsed:.0f}ms")
+  print(f"Elapsed time: {elapsed:.0f}ms")
 
   return pi
 
@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
   n = int(sys.argv[1])  
 
-  print("Valor de pi default:", math.pi)
+  print("Default pi value:", math.pi)
 
   pi = calculate_pi(n)
-  print("Valor de pi calculado localmente:", pi)
+  print("pi value calculated locally:", pi)

@@ -18,7 +18,7 @@ double calculatePi(int n) {
 
     clock_t end = clock();
     double elapsed = (double)(end - start) * 1000 / CLOCKS_PER_SEC;
-    std::cout << "Tiempo transcurrido: " << elapsed << "ms" << std::endl;
+    std::cout << "Elapsed time: " << elapsed << "ms" << std::endl;
 
     return pi;
 }
@@ -33,10 +33,10 @@ int main(int argc, char* argv[]) {
         return 0;
     }
 
-    std::cout << "valor de pi default: " << M_PI << std::endl;
+    std::cout << "Default pi value: " << M_PI << std::endl;
 
     double pi = calculatePi(n);
-    std::cout << "valor de pi calculado localmente: " << pi << std::endl;
+    std::cout << "pi value calculated locally: " << pi << std::endl;
 
     return 0;
 }

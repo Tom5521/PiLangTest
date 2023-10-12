@@ -18,7 +18,7 @@ double calculatePi(int n) {
 
     clock_t end = clock();
     double elapsed = (double)(end - start) * 1000 / CLOCKS_PER_SEC;
-    printf("Tiempo transcurrido: %fms\n", elapsed);
+    printf("Elapsed time: %fms\n", elapsed);
 
     return pi;
 }
@@ -33,10 +33,10 @@ int main(int argc, char* argv[]) {
         return 0;
     }
 
-    printf("valor de pi default: %f\n", M_PI);
+    printf("Default Pi value: %f\n", M_PI);
 
     double pi = calculatePi(n);
-    printf("valor de pi calculado localmente: %f\n", pi);
+    printf("pi value calculated locally: %f\n", pi);
 
     return 0;
 }
