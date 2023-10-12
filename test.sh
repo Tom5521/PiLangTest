@@ -1,21 +1,21 @@
 #!/bin/bash
 
 
-presicion=100000000
+accuracy=100000000
+CalculateIn="Calculate pi in"
+
+echo Accuracy = $accuracy
 
 
-echo Presision = $presicion\n
-
-
-echo Calcular pi en golang:
-./pi-go $presicion
-echo Calcular pi en python
-python main.py $presicion
-echo Calcular pi en C 
-./pi-c $presicion
-echo Calcular pi en C++
-./pi-cpp $presicion
-echo Calcular pi en Rust
-./pi-rust $presicion
+echo $CalculateIn golang
+./pi-go $accuracy
+echo $CalculateIn python
+python main.py $accuracy
+echo $CalculateIn C 
+./pi-c $accuracy
+echo $CalculateIn C++
+./pi-cpp $accuracy
+echo $CalculateIn Rust
+./pi-rust $accuracy
 
 
