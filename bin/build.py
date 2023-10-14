@@ -13,6 +13,8 @@ if not os.path.exists("builds"):
 
 build("Go")
 sys(f"go build -o builds/pi-go{win} ./compiled/pi.go")
+build("Go(gccgo)")
+sys(f"go build -compiler gccgo -o builds/pi-gcc-go{win} ./compiled/pi.go")
 build("C++")
 sys(f"g++ -o builds/pi-cpp{win} ./compiled/pi.cpp")
 build("C")

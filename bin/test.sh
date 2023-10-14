@@ -9,7 +9,10 @@ echo Accuracy = $accuracy
 
 echo $CalculateIn golang
 ./builds/pi-go $accuracy
-echo 
+echo
+echo "$CalculateIn golang(gccgo)"
+./builds/pi-gcc-go
+echo
 echo $CalculateIn python
 python ./interpreted/pi.py $accuracy
 echo 
